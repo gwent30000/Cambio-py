@@ -1,9 +1,8 @@
-import requests
+from flask import Flask
+import utils
 
-API_URL = 'https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD'
-#a chave fica em um arquivo .env! coloquei esse exemplo simples pq vou construir o arquivo ainda
+app = Flask(__name__)
+utils.init_app(app)
 
-response = requests.get(API_URL)
-data = response.json()
-
-print(data)
+if __name__ == "__main__":
+    app.run(debug=True)
