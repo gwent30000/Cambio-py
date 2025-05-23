@@ -7,4 +7,4 @@ Um conversor de moedas simples usando uma API pública Exchange API.
 - Execute: `python conversor.py`
 
 ## resultado
-![Print da tela](img/print.png)
+![Print da tela](img/print01.png)
