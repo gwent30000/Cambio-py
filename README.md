@@ -25,7 +25,9 @@ E na rota principal (/) - homepage
 Quando alguém abre a página, o backend faz uma requisição para a API externa de câmbio que recebe as taxas de conversão atualizadas e manda esses dados para o arquivo index.html.
 Esses dados vêm numa variável chamada exchange_data.
 
-![Print da tela](https://github.com/gwent30000/Cambio-py/blob/main/conversor-moedas/img/2025-08-01 225615.png)
+![Print da tela](![Print da tela](https://github.com/gwent30000/Cambio-py/blob/eb86c08f07b2f1b66a0907463979bba2a0b26ba1/conversor-moedas/img/3342544.png)
+
+![Print da tela](https://github.com/gwent30000/Cambio-py/blob/eb86c08f07b2f1b66a0907463979bba2a0b26ba1/conversor-moedas/img/Captura%20de%20tela%202025-08-01%20225615.png)
 
 Rota de conversão (/converter) - converter
 Quando o usuário enviar o formulário no site com:
