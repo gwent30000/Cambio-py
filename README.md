@@ -16,7 +16,39 @@ Este projeto é um conversor de moedas simples que usa Flask para o backend e um
 - python-dotenv  
 - API ExchangeRate-API (https://www.exchangerate-api.com/)
 
-## Como usar
+## Como funciona(EXPLICAÇÃO PARA A VERSÃO COMPLETA)
+
+Carrega a API key
+O código pega a chave da API (API_KEY) que você guarda no arquivo .env, para poder consultar ela.
+
+E na rota principal (/) - homepage
+Quando alguém abre a página, o backend faz uma requisição para a API externa de câmbio que recebe as taxas de conversão atualizadas e manda esses dados para o arquivo index.html.
+Esses dados vêm numa variável chamada exchange_data.
+
+![Print da tela](https://github.com/gwent30000/Cambio-py/blob/main/conversor-moedas/img/2025-08-01 225615.png)
+
+Rota de conversão (/converter) - converter
+Quando o usuário enviar o formulário no site com:
+
+    moeda_origem (ex: "USD")
+
+    moeda_destino (ex: "BRL")
+
+    valor (ex: 100)
+
+O backend faz outra requisição para a API para garantir que as taxas estão atualizadas. Depois ele pega as taxas para as duas moedas escolhidas.
+
+- Cálculo da conversão
+Como a API sempre tem as taxas baseadas no USD, o código:
+
+    converte o valor enviado para USD (dividindo pelo valor da taxa da moeda de origem)
+
+    converte o valor em USD para a moeda destino (multiplicando pela taxa da moeda destino)
+
+- Resultado enviado para o frontend
+O valor convertido (arredondado com 2 casas decimais) é enviado para o index.html junto com as taxas atualizadas para mostrar pro usuário.
+
+![Print da tela](https://github.com/gwent30000/Cambio-py/blob/main/conversor-moedas/img/PRINT02.png)
 
 ### Pré-requisitos
 
