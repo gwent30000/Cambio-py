@@ -8,13 +8,13 @@ Este projeto é um conversor de moedas simples que usa Flask para o backend e um
 - Permite o usuário converter um valor entre duas moedas diferentes.
 - Também mostra ao usuário uma lista de todas as moedas em relação a 1 dólar americano(USD).
 
-## Tecnologias usadas
+## 🛠 Tecnologias usadas
 
-- Python 3.x  
-- Flask  
-- requests  
-- python-dotenv  
-- API ExchangeRate-API (https://www.exchangerate-api.com/)
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-Framework-black?logo=flask)
+![Requests](https://img.shields.io/badge/Requests-HTTP%20Client-yellow)
+![python-dotenv](https://img.shields.io/badge/dotenv-Environment%20Variables-green)
+[![API](https://img.shields.io/badge/API-ExchangeRateAPI-orange)](https://www.exchangerate-api.com/)
 
 ## Como funciona(EXPLICAÇÃO PARA A VERSÃO COMPLETA)
 
