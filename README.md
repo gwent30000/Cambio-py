@@ -10,7 +10,7 @@ Este projeto é um conversor de moedas simples que usa Flask para o backend e um
 
 ## 🛠 Tecnologias usadas
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![Flask](https://img.shields.io/badge/Flask-Framework-black?logo=flask)
 ![Requests](https://img.shields.io/badge/Requests-HTTP%20Client-yellow)
 ![python-dotenv](https://img.shields.io/badge/dotenv-Environment%20Variables-green)
